@@ -1,0 +1,53 @@
+package:
+  name: strings-extra
+  dependencies:
+    - arrays
+    - assert
+    - console
+    - effect
+    - foldable-traversable
+    - integers
+    - maybe
+    - prelude
+    - strings
+    - unicode
+
+  test:
+    main: Test.Main
+    dependencies:
+      - assert
+      - console
+      - effect
+
+workspace:
+  packageSet:
+    registry: 77.7.0
+  extraPackages:
+    aff:
+      path: "../gopurs-aff"
+    arrays:
+      path: "../gopurs-arrays"
+    assert:
+      path: "../gopurs-assert"
+    catenable-lists:
+      path: "../gopurs-catenable-lists"
+    console:
+      path: "../gopurs-console"
+    effect:
+      path: "../gopurs-effect"
+    foldable-traversable:
+      path: "../gopurs-foldable-traversable"
+    integers:
+      path: "../gopurs-integers"
+    lazy:
+      path: "../gopurs-lazy"
+    prelude:
+      path: "../gopurs-prelude"
+    spec:
+      path: "../gopurs-spec"
+    st:
+      path: "../gopurs-st"
+    strings:
+      path: "../gopurs-strings"
+    numbers:
+      path: "../gopurs-numbers"
