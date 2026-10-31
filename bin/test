@@ -32,7 +32,6 @@ if [ -d "output/main" ]; then
     cd output
     rm -f go.mod
     go mod init gopurs/output > /dev/null 2>&1
-    go get github.com/iancoleman/strcase
     go mod tidy > /dev/null 2>&1
     go build -o go_test_app ./main
     cd ..
